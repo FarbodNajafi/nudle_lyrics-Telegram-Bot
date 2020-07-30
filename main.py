@@ -123,7 +123,7 @@ def inline_message(update, context):
 
             results.append(
                 InlineQueryResultArticle(
-                    id=f'{data["id"][:3]}-{artists}-{title}',
+                    id=f'{str(data["id"])[:3]}-{artists}-{title}',
                     title=f'{artists} - {title}',
                     thumb_url=picture,
                     input_message_content=InputTextMessageContent(
